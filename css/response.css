@@ -1,0 +1,22 @@
+@media screen and (max-width:768px){
+   header{
+    border: none;
+  }
+   header div.wrap ul.gnb{
+     display: none;
+   }
+   header div.wrap ul.lang{
+     display: none;
+   } 
+   .ham{
+     display: flex;
+   }
+/*  타이틀  */
+  #title{
+    
+  }
+  #title .wrap{
+  text-align: center;
+  padding: 0 10px;
+  }
+ }
