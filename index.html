@@ -13,10 +13,8 @@
     <!-- 구글폰트// -->
     <!-- 프리텐다드 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <!--  -->
-    <!-- https://ionic.io/ionicons/v1 -->
+    <!-- css -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
-    <!--  -->
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/ham.css">
@@ -30,19 +28,10 @@
     <link rel="stylesheet" href="css/response.css">
     <!-- 제이쿼리 연결 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- 스크립트 > 제이쿼리 기본구조 > 대메뉴li에 마우스를 올리면 실행하시오 -->
     <script type="text/javascript">
         $(document).ready(function(){
             $("header div.wrap ul.gnb li").hover(
                 function(){
-                    //sublist에 클래스를 붙이시오(show)
-                    /*
-                    $().addClass();
-                    $("").addClass();
-                    $("header div.wrap .sublist").addClass();
-                    $("header div.wrap .sublist").addClass("");
-                    $("header div.wrap .sublist").addClass("show");
-                    */
                     $("header div.wrap .sublist").addClass("show");
                 },
                 function(){
@@ -50,7 +39,7 @@
 
                 }
             );
-            //sublist에서 벗어나면 실행하시오(mouseleave이벤트)
+            //sublist에서 벗어나면 실행
             $("header div.wrap .sublist").mouseleave(function(){
                 $("header div.wrap .sublist").removeClass("show");
             });
